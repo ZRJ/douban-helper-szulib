@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "豆瓣助手 - 深大图书馆借阅查询",
+  "version": "0.1",
+  "description": "在浏览豆瓣图书的过程中在侧边显示深圳大学图书馆的馆藏情况",
+  "permissions": [
+    "http://www.weixiaoyuan.com/html5/*"
+  ],
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "content_scripts": [{
+      "matches": ["http://book.douban.com/subject/*"],
+      "js" : ["jquery.min.js", "contentscript.js"]
+  }]
+}
